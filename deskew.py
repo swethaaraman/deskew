@@ -18,7 +18,7 @@ driver.find_element_by_class_name("recents-item__heading").click()
 time.sleep(4)
 driver.find_element_by_xpath("""//*[@id="react-file-viewer"]/div/div/div[1]/div/div[2]/div[2]/div/div/button/div/button""").click()
 driver.find_element_by_xpath("""//*[@id="react-file-viewer"]/div/div/div[1]/div/div[2]/div[2]/div/div/div/div/nav/div/button""").click()
-image = cv2.imread('ab.png')
+image = cv2.imread('deskew.png')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 gray = cv2.bitwise_not(gray)
 pixel = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
